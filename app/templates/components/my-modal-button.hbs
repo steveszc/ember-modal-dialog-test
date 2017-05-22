@@ -1,0 +1,9 @@
+<button type="button" {{action 'toggleModal'}}>Click Me</button>
+
+{{#if isShowing}}
+  {{#modal-dialog onClose="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    <h2>Oh hai there!</h2>
+  {{/modal-dialog}}
+{{/if}}
