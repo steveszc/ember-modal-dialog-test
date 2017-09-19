@@ -2,8 +2,12 @@
 
 {{#if isShowing}}
   {{#modal-dialog onClose="toggleModal"
-                  targetAttachment="center"
-                  translucentOverlay=true}}
+    targetAttachment="center"
+    translucentOverlay=true
+    wrapperClassNames=""
+    overlayClassNames=""
+    containerClassNames=""
+  }}
     <h2>Oh hai there!</h2>
   {{/modal-dialog}}
 {{/if}}
